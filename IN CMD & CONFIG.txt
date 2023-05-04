@@ -1,0 +1,27 @@
+
+---------------------------------------------------
+router configration
+en 
+config t
+hostname*********
+int Gig6/0 
+ip address :?????? subnetmask:????????
+ctrl^z
+copy run start
+----------------------------------------------------
+switch and router password
+
+
+en 
+config t 
+hostname ****
+line console 0
+password ****
+login 
+exit 
+enable secret *******
+service password-encryption
+banner motd "Please enter the password:" 
+ctrl^z
+copy run start
+--------------------------------------------------------
